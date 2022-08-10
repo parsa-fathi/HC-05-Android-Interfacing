@@ -20,6 +20,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
         android:fontFamily="sans-serif-black"
+        android:shadowColor="#b3b3b3"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="1"
         android:text="LOGIN"
         android:textColor="#809BCE"
         android:textSize="25sp" />

@@ -6,41 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".LedControl">
 
-    <Button
+    <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/btOn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="48dp"
-        android:background="#81C784"
+        app:bootstrapSize="xl"
+        app:roundedCorners="true"
+        app:bootstrapBrand="success"
         android:text="Turn On"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/status" />
+        app:layout_constraintTop_toBottomOf="@+id/status">
 
-    <Button
+    </com.beardedhen.androidbootstrap.BootstrapButton>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/btOff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="28dp"
-        android:background="#E57373"
         android:text="Turn Off"
+        app:bootstrapBrand="danger"
+        app:bootstrapSize="xl"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/status" />
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        app:roundedCorners="true">
 
-    <Button
+    </com.beardedhen.androidbootstrap.BootstrapButton>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
         android:id="@+id/btDis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
-        android:background="#D32F2F"
+        app:roundedCorners="true"
+        app:bootstrapSize="xl"
+        app:bootstrapBrand="warning"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="disconnect connection"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/status" />
+        app:layout_constraintTop_toBottomOf="@+id/status">
+
+    </com.beardedhen.androidbootstrap.BootstrapButton>
 
     <TextView
         android:id="@+id/status"
@@ -49,6 +61,10 @@
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
+        android:shadowColor="#b3b3b3"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
         android:text="Status"
         android:textColor="#1976D2"
         android:textSize="18sp"

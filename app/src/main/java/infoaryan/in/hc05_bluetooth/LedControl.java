@@ -15,12 +15,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.beardedhen.androidbootstrap.BootstrapButton;
+import com.beardedhen.androidbootstrap.TypefaceProvider;
+
 import java.io.IOException;
 import java.util.UUID;
 
 public class LedControl extends AppCompatActivity {
 
-    Button btOn, btOff, btDis;
+    BootstrapButton btOn, btOff, btDis;
     TextView status;
     String address = null;
     private ProgressDialog progress;
@@ -32,6 +35,7 @@ public class LedControl extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TypefaceProvider.registerDefaultIconSets();
         setContentView(R.layout.activity_led_control2);
 
 
